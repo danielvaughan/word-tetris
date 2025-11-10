@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.vscode
+.git
+.gitignore
+Dockerfile
+.env
+**/node_modules
+**/.DS_Store
+infra/
+src/__tests__/
+coverage

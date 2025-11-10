@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: #d4c4a8;
+  border-radius: 4px;
+  border: 3px solid #8b7355;
+  min-width: 180px;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  background: #e8dcc8;
+  border-radius: 3px;
+  border: 1px solid #c4a57b;
+}
+
+.title {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6b2d2d;
+  letter-spacing: 0.5px;
+  font-family: Georgia, serif;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d1810;
+  font-family: Georgia, serif;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4c4a8;
+  border-radius: 3px;
+  padding: 4px;
+  border: 1px solid #c4a57b;
+}
+
+.nextBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recentWords {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.wordItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #f5e6d3;
+  border-radius: 3px;
+  border: 1px solid #c4a57b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.word {
+  font-size: 12px;
+  font-weight: bold;
+  color: #2d1810;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: Georgia, serif;
+}
+
+.wordScore {
+  font-size: 11px;
+  font-weight: bold;
+  color: #8b4545;
+  font-family: Georgia, serif;
+}
+
+/* Scrollbar styling */
+.container::-webkit-scrollbar,
+.recentWords::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-track,
+.recentWords::-webkit-scrollbar-track {
+  background: #c4a57b;
+  border-radius: 3px;
+}
+
+.container::-webkit-scrollbar-thumb,
+.recentWords::-webkit-scrollbar-thumb {
+  background: #8b7355;
+  border-radius: 3px;
+}
+
+.container::-webkit-scrollbar-thumb:hover,
+.recentWords::-webkit-scrollbar-thumb:hover {
+  background: #6b5845;
+}
+
+.musicToggle {
+  width: 100%;
+  padding: 8px 12px;
+  background: linear-gradient(to bottom, #8b7355, #6b5848);
+  border: 2px solid #5a483a;
+  border-radius: 4px;
+  color: #f5e6d3;
+  font-family: Georgia, serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.musicToggle:hover {
+  background: linear-gradient(to bottom, #9b8365, #7b6858);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.musicToggle:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
